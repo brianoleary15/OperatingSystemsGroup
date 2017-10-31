@@ -173,6 +173,7 @@ class Main {
         System.exit(0);
       }
       String workingDir = System.getProperty("user.dir");
+      System.out.println(workingDir);
       File f = new File(workingDir + File.separator + "bin" + File.separator + command + ".class");
       if(!f.exists())
         System.out.println("File: " + command + " does not exist.");
